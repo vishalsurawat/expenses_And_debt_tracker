@@ -1,0 +1,8 @@
+This database will help us track our daily income and expenses using MySQL.
+It will help us keep track of our daily expenses, including small purchases made as part of our daily routine.
+We can analyze our income and expenses using MySQL to understand our spending habits.
+We can set spending limits according to our needs and financial goals.
+We can analyze our daily expenses and control unnecessary spending.
+We can track our daily expenses and reduce them whenever necessary.
+We can analyze our daily financial activities based on our income and expenses.
+We can save money by managing our expenses wisely and make better financial decisions about where to invest our money to potentially earn more.
