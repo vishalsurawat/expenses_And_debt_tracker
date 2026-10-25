@@ -78,3 +78,30 @@ END //
 CALL get_total_income_amount(2,@income) //
 
 SELECT @income//
+
+-- Q3) display users total debt value using procedure :
+CREATE PROCEDURE debtor_total(IN u_id INT ,
+OUT total_debts DECIMAL(10,2) )
+BEGIN 
+SELECT SUM(amount) INTO total_debts
+FROM debts WHERE user_id = u_id ;
+END //
+
+CALL debtor_total (2,@debt_total) //
+SELECT @debt_total //
+
+-- Q4) display debt person name using procedure :
+CREATE PROCEDURE get_debt_person_name(IN u_id INT,
+OUT p_name VARCHAR(50) )
+BEGIN 
+SELECT person_name INTO p_name FROM debts
+ WHERE user_id = u_id ;
+ END // 
+ 
+ CALL get_debt_person_name(3,@name) //
+ SELECT @name //
+
+
+
+
+
