@@ -98,9 +98,20 @@ SELECT person_name INTO p_name FROM debts
  WHERE user_id = u_id ;
  END // 
  
- CALL get_debt_person_name(3,@name) //
+ CALL get_debt_person_name(8,@name) //
  SELECT @name //
 
+-- Q5) display total amount of users payble using procedure :
+
+USE expenses_and_dept_tracker //
+CREATE PROCEDURE get_debt_total(OUT total_debt DECIMAL (10.2) )
+BEGIN
+SELECT SUM(amount) INTO total_debt 
+FROM debts WHERE debt_type = "lent" ;
+END //
+
+CALL get_debt_total(@total) //
+SELECT @total //
 
 
 
