@@ -1,8 +1,8 @@
- -- =====================================================
+
 -- PERSONAL EXPENSE AND DEBT TRACKER
 -- File: 01_Create_Tables.sql
 -- Purpose: Create database and table schema
--- =====================================================
+
 
 
 -- 1. CREATE DATABASE
@@ -12,10 +12,9 @@ CREATE DATABASE IF NOT EXISTS Expenses_and_dept_tracker;
 USE Expenses_and_dept_tracker;
 
 
--- =====================================================
+--
 -- 2. USERS TABLE
 -- Stores information about users
--- =====================================================
 
 CREATE TABLE users (
     user_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -27,10 +26,10 @@ CREATE TABLE users (
 );
 
 
--- =====================================================
+
 -- 3. INCOME TABLE
 -- Stores income records for each user
--- =====================================================
+
 
 CREATE TABLE income (
     income_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -50,10 +49,10 @@ CREATE TABLE income (
 );
 
 
--- =====================================================
+
 -- 4. EXPENSES TABLE
 -- Stores expense records for each user
--- =====================================================
+
 
 CREATE TABLE expenses (
     expense_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -74,10 +73,10 @@ CREATE TABLE expenses (
 );
 
 
--- =====================================================
+
 -- 5. DEBTS TABLE
 -- Stores borrowed and lent money records
--- =====================================================
+
 
 CREATE TABLE debts (
     debt_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -100,9 +99,8 @@ CREATE TABLE debts (
 );
 
 
--- =====================================================
+
 -- 6. VERIFY TABLES
--- =====================================================
 
 SHOW TABLES;
 
